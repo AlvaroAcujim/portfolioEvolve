@@ -293,7 +293,6 @@ h1 {
   margin: 20px 0px 20px 0px;
 }
 .form__data-item label{
-  padding-top: 10px;
   padding-bottom: 15px;
   color: #18233f;
   font-weight: 600;
@@ -302,6 +301,9 @@ h1 {
 }
 .form__data-item input{
   text-align: center;
+}
+.form__data-item--file{
+  margin: auto;
 }
 
 .form__contact{
@@ -314,9 +316,6 @@ h1 {
   
 }
 
-.phone{
-  margin-bottom: 20px;
-}
 .form__data-item--submit{
   padding: 15px 30px;
   background-color: #4488ee;
