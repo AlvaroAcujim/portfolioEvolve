@@ -143,12 +143,9 @@
     </section>
     <div class="form">
         <div class="form-wrapper">
-          
-  
           <div class="form__data-container">
             <div class="form__data">
-              
-                <form action="" class="fom__data-contact">
+              <form action="" class="fom__data-contact">
                   <fieldset class="form__contact">
                     <legend>Contacto</legend>
                       <div class="form__data-item name">
@@ -157,22 +154,81 @@
                         </label>
                         <input type="text" name="username" required maxlength="20" title="Escribe tu nombre" required />
                       </div>
+                      <div class="form__data-item password">
+                        <label name="password">
+                          Contraseña: 
+                        </label>
+                        <input type="password" name="password" required maxlength="20" title="Escribe tu contraseña" required />
+                      </div>
+                      <div class="form__data-item num">
+                        <label name="num">
+                          Escribe un número: 
+                        </label>
+                        <input type="number" name="num" min="0" max="100000" title="Escribe un numero" placeholder="Escribe un numero del 0-100000" />
+                      </div>
+                      <div class="form__data-item city">
+                        <label name="city">
+                          Escribe un ciudad: 
+                        </label>
+                        <input list="cities" name="city" placeholder="Ciudad" />
+                        <datalist id="cities">
+                          <option value="Madrid">Madrid</option>
+                          <option value="Barcelona">Barcelona</option>
+                          <option value="Valencia">Valencia</option>
+                          <option value="Sevilla">Sevilla</option>
+                          <option value="Murcia">Murcia</option>
+                          <option value="Zaragoza">Zaragoza</option>
+                          <option value="Bilbao">Bilbao</option>
+                          <option value="Granada">Granada</option>
+                          <option value="Lugo">Lugo</option>
+                          <option value="Oviedo">Oviedo</option>
+                          <option value="Vigo">Vigo</option>
+                          <option value="Santander">Santander</option>
+                          <option value="Valladolid">Valladolid</option>
+                        </datalist>
+                      </div>
                       <div class="form__data-item email">
-                        
                         <label name="email">
                           Correo: 
                         </label>
-                        <input type="email" name="mail" required maxlength="35" title="Escribe tu email" placeholder="usuario@hotmail.com" required />
+                        <input type="email" name="email" required maxlength="35" title="Escribe tu email" placeholder="usuario@hotmail.com" required />
                       </div>
                       <div class="form__data-item phone">
-                        
                         <label name="phone">
                           Nº de teléfono: 
                         </label>
                         <input type="tel" name="phone" pattern="+?[0-9]{1,3}[-]?[0-9]{7,12}" placeholder="+34 612345678" title="Introduce un número de teléfono con o sin código de país" />
                       </div>
+                      <div class="form__data-item phone">
+                        <label name="phone">
+                          Seleccione su país: 
+                        </label>
+                        <select name="país">
+                          <option value="es">España</option>
+                          <option value="us">Estados Unidos</option>
+                          <option value="ar">Argentina</option>
+                          <option value="mx">Mexico</option>
+                        </select>
+                      </div>
+                      <div class="form__data-item date">
+                        <label name="date">
+                          Fecha actual: 
+                        </label>
+                        <input type="date" name="date" title="Escribe la fecha de hoy" />
+                      </div>
+                      <div class="form__data-item file">
+                        <label name="file">
+                          Manda un archivo:
+                        </label>
+                        <input type="file" name="file" />
+                      </div>
+                      <div class="form__data-item checkbox">
+                        <label name="checkbox">
+                          <input type="checkbox" name="checkbox" />
+                          Acepto los términos y condiciones.
+                        </label>
+                      </div>
                       <div class="form__data-item submit">
-                        
                         <input type="submit" name="submit" class="form__data-item--submit"/>
                       </div>
                   </fieldset>
